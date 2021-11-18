@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
     purge: [
         './assets/**/*.js',
@@ -9,9 +7,11 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                sky: colors.sky,
-                cyan: colors.cyan,
+                background: '#d5d5d5',
             },
+            fontFamily: {
+                'roboto': ['Roboto', 'ui-sans-serif', 'serif'],
+            }
         },
     },
     variants: {
