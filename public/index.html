@@ -20,17 +20,17 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="px-9 bg-background font-roboto">
+<body class="bg-background font-roboto min-w-">
 
-<header class="flex mt-5 items-center">
+<header class="px-9 flex mt-5 items-center">
     <div class="flex-none mr-28 text-xl font-bold">
         LOGO
     </div>
     <nav class="flex-grow space-x-9 text-sm ml-5">
-        <a href="#" class="hover:underline">About</a>
-        <a href="#" class="hover:underline">Roadmap</a>
-        <a href="#" class="hover:underline">Team</a>
-        <a href="#" class="hover:underline">FAQ</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#roadmap" class="hover:underline">Roadmap</a>
+        <a href="#team" class="hover:underline">Team</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
     </nav>
     <div class="flex-none">
         <div class="flex space-x-4">
@@ -67,15 +67,147 @@
 
                 </a>
             </div>
-            <a href="#" class="text-sm bg-black hover:bg-gray-700 text-white py-1.5 px-4 rounded-lg">Connect wallet</a>
+            <button class="text-sm bg-black hover:bg-gray-700 text-white py-1.5 px-4 rounded-lg">Connect wallet</button>
         </div>
     </div>
 </header>
 
-<div class="flex">
-    <div class="flex-grow"></div>
-    <div class="flex-grow"></div>
+<div class="grid grid-cols-2 h-150">
+    <div class="flex items-end items-end">
+        <div class="max-w-lg mx-auto">
+            <img src="/img/characters-big.png" alt="characters">
+        </div>
+    </div>
+    <div class="flex items-center">
+        <div>
+            <h3 class="text-sm">NFT collection</h3>
+            <h1 class="text-5xl font-black mt-5">Crypto Buddiez</h1>
+            <p class="mt-6 max-w-lg">
+                10,000 tokens with special features. Passive income for holders, giveaways, contest, official merch and more
+            </p>
+            <div class="mt-7 text-2xl font-bold">
+                Minted: 24/10,000
+            </div>
+            <div class="mt-2 w-96">
+                <div class="h-2 rounded-lg" style="background-color: #ABABAB;">&nbsp;</div>
+                <div class="h-2 w-8 rounded-lg -mt-2 bg-black" style="background-color: #393939;">&nbsp;</div>
+            </div>
+            <div class="mt-5 w-96">
+                <div class="flex">
+                    <div>
+                        <span class="text-sm text-gray-600">Price:</span> <span>0.04 ETH</span>
+                        <div class="text-sm text-gray-600">Quantity</div>
+                        <div class="mt-1">
+                            <div class="bg-white rounded-lg w-52 h-10">&nbsp;</div>
+                            <div class="flex -mt-10 h-10 items-center">
+                                <div class="w-10 py-3 text-center cursor-pointer">+</div>
+                                <div class="flex-grow text-center">2</div>
+                                <div class="w-10 py-3 text-center cursor-pointer">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-end ml-5">
+                        <div class="text-sm text-gray-600">Total price</div>
+                        <div class="mt-1 h-10 flex items-center text-2xl font-bold">
+                            0.08 ETH <div class="text-sm -mb-1">&nbsp;+ Gas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="w-full bg-black text-white rounded-lg px-20 py-2 tracking-wide">Mint now</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="bg-white flex flex-nowrap overflow-hidden pt-8 pl-8 space-x-8">
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+    <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+        <div class="text-center mx-auto">
+            token preview
+        </div>
+    </div>
+</div>
+
+<div class="bg-white pt-24" id="about">
+    <h1 class="text-center text-2xl font-black">About project</h1>
+    <div class="max-w-xl mx-auto mt-8">
+        <p>
+            Crypto Buddiez are 10,000 college friends living in Ethereum Blockchain. All of them are different, but they fight for the same ideas.
+        </p>
+        <p class="pt-4">
+            A unique digital collection of diverse NFTs lying on Ethereum Blockchain. Each one is thoughtfully designed, specifically picked, and impeccably shaped. Join us on our adventure and have a good time. Having a Buddy Token grants you creative and commercial rights, as well as inclusion in the community. Our mission is to create a powerful and empathic community, based on friendship and mutual help.
+        </p>
+    </div>
+</div>
+
+<div class="bg-white pt-24" id="features">
+    <h1 class="text-center text-2xl font-black">Features</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center mx-16 pt-6">
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">Diversity of tokens</h2>
+            <p class="text-sm mt-3">Collection include 15 animal species and summary of 180+ traits, which make us different from other PFP-based projects</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">Passive income</h2>
+            <p class="text-sm mt-3">We’ll reward our supporters by giving them 25% from secondary sales on opensea</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">Charity</h2>
+            <p class="text-sm mt-3">During all life of the project we’ll conduct charity initiatives</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">NFT projects support</h2>
+            <p class="text-sm mt-3">We’ll reward our supporters by giving them 25% from secondary sales on opensea</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">Education</h2>
+            <p class="text-sm mt-3">As part of the project, we will carry out activities for technical and financial literacy and launch educational platform</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">Giveaways & contests</h2>
+            <p class="text-sm mt-3">By investing in Crypto Buddiez you get a chanse to win NFTs, merch, ETH and more</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">Community first</h2>
+            <p class="text-sm mt-3">Our key strategy desicions will be making together with holders</p>
+        </div>
+        <div class="p-5 mt-6">
+            <h2 class="text-md font-black">More to come!</h2>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white h-96">&nbsp;</div>
 
 
 <script src="/js/app.js"></script>

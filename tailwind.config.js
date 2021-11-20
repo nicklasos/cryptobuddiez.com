@@ -11,6 +11,9 @@ module.exports = {
             },
             fontFamily: {
                 'roboto': ['Roboto', 'ui-sans-serif', 'serif'],
+            },
+            spacing: {
+                '150': '36rem',
             }
         },
     },
