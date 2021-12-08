@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: Roboto, ;
+.bordered-text {
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    font-family: Poppins; color: white;
+}
+
+.anon-back {
+    background-color:#252525;
+    background-image: url('/img/anon-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
