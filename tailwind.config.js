@@ -11,7 +11,8 @@ module.exports = {
                 'black-background': '#1F1F1F',
                 'gray-text': '#888888',
                 'lightgray-text': '#565656',
-                'lightgray-text-header': '#C5C5C5'
+                'lightgray-text-header': '#C5C5C5',
+                'design-yellow': '#FFDE9D',
             },
             fontFamily: {
                 'roboto': ['Roboto', 'ui-sans-serif', 'serif'],
