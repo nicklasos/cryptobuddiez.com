@@ -22,7 +22,9 @@ module.exports = {
             spacing: {
                 15: '3.75rem',
                 22: '5.5rem',
+                98: '25rem',
                 150: '36rem',
+                200: '40rem',
             },
             fontSize: {
                 '4.5xl': ['2.75rem', { lineHeight: '2.5rem' }],
