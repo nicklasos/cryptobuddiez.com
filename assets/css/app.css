@@ -22,3 +22,8 @@
 
     color: white;
 }
+
+.rainbow-text {
+    background-image: linear-gradient(to left, #FFB88C, #FFE7A1, #95E2FF, #9795DE);   -webkit-background-clip: text;
+    color: transparent;
+}

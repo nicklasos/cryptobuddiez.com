@@ -13,6 +13,8 @@ module.exports = {
                 'lightgray-text': '#565656',
                 'lightgray-text-header': '#C5C5C5',
                 'design-yellow': '#FFDE9D',
+				'design-text-yellow': '#FFE7A1',
+				'design-text-pink': '#FFB8CA',
             },
             fontFamily: {
                 'roboto': ['Roboto', 'ui-sans-serif', 'serif'],

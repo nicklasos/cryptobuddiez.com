@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="-scroll-smooth">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 
 <body class="bg-background font-Poppins">
 
-<header class="sticky drop-shadow-sm w-full bg-white top-0">
+<header class="sticky drop-shadow-sm w-full bg-white top-0 z-10">
     <div class="flex items-center border-b border-black h-15">
         <div class="flex-none">
             <a href="#header">
@@ -189,22 +189,35 @@
 </div>
 
 <!-- About -->
-<div id="about" class="mt-22 scroll-mt-28 md:max-w-xl md:ml-20 lg:ml-32">
-    <div class="pl-5">
-        <h1 class="text-4.5xl tracking-wide font-bold">About project</h1>
-    </div>
 
-    <div class="mt-7 px-5">
-        <p class="font-roboto-mono">
-            Crypto Buddiez are 10,000 college friends living in Ethereum Blockchain. All of them are different, but they
-            fight for the same ideas.
-            <br><br>
-            A unique digital collection of diverse NFTs lying on Ethereum Blockchain. Each one is thoughtfully designed,
-            specifically picked, and impeccably shaped. Join us on our adventure and have a good time.
-        </p>
-        <div class="mt-8 md:max-w-xs">
-            <button class="w-full border-black border rounded-full py-3">Read roadmap</button>
+
+<div class="lg:flex">
+    <div id="about" class="mt-22 scroll-mt-28 md:max-w-xl md:ml-20 lg:ml-32">
+        <div class="">
+            <div class="pl-5">
+                <h1 class="text-4.5xl tracking-wide font-bold">About project</h1>
+            </div>
+
+            <div class="mt-7 px-5">
+                <p class="font-roboto-mono">
+                    Crypto Buddiez are 10,000 college friends living in Ethereum Blockchain. All of them are different,
+                    but
+                    they
+                    fight for the same ideas.
+                    <br><br>
+                    A unique digital collection of diverse NFTs lying on Ethereum Blockchain. Each one is thoughtfully
+                    designed,
+                    specifically picked, and impeccably shaped. Join us on our adventure and have a good time.
+                </p>
+                <div class="mt-8 md:max-w-xs">
+                    <button class="w-full border-black border rounded-full py-3">Read roadmap</button>
+                </div>
+            </div>
         </div>
+
+    </div>
+    <div class="hidden lg:block flex-grow">
+        <img class="m-auto mt-22" src="/img/circle.svg" alt="Mint crypto buddiez">
     </div>
 </div>
 
@@ -248,65 +261,108 @@
     </div>
 </div>
 
+<!-- Trait rarity -->
+
 <div class="mt-12 p-5">
     <h2 class="text-2xl font-bold border-b border-black pb-3">Trait rarity</h2>
-    <p class="font-roboto-mono mt-12 md:ml-20 lg:ml-32">
-        All Buddiez are equal, but some are more equal than others. That’s why we’ve established a trait rarity system
-        to tell which of our students are likely destined for greatness.
-        <br><br>
-        There are 180+ total traits and these have been categorized into a tier based system (seen on the right). Traits
-        are ranked from ‘common’ all the way through to ‘legendary’ and each rank has a corresponding % chance of being
-        minted.
-    </p>
 </div>
 
-<div class="mt-10 flex flex-wrap md:ml-20 lg:ml-32">
-    <div class="flex-grow p-5">
-        <p class="text-4.5xl font-bold text-gray-500">
-            <img class="h-10" src="/img/text/180.png" alt="180+">
-        </p>
-        <p class="font-bold pt-2">traits</p>
-    </div>
+<div class="lg:flex">
 
-    <div class="flex-grow p-5">
-        <p class="text-4.5xl font-bold text-gray-500">
-            <img class="h-10" src="/img/text/12.png" alt="12">
-        </p>
-        <p class="font-bold pt-2">categories</p>
-    </div>
-
-    <div class="p-5">
-        <p class="text-4.5xl font-bold text-gray-500">
-            <img class="h-10" src="/img/text/15.png" alt="15">
-        </p>
-        <p class="font-bold pt-2">animals</p>
-    </div>
-
-    <div class="p-5 md:w-full">
-        <p class="text-4.5xl font-bold text-gray-500">
-            <img class="h-10" src="/img/text/10000.png" alt="10000">
-        </p>
-        <p class="font-bold pt-2">max total supply, over trillions combinations</p>
-    </div>
-</div>
-
-<div class="mt-4 p-5">
-    <div class="flex bg-black p-3 rounded-lg">
-        <div class="flex-grow">
-            <p class="text-white font-black">Common</p>
-            <p class="text-gray-400 font-roboto-mono">5,000 tokens</p>
+    <div class="lg:w-[55%]">
+        <div class="mt-4 p-5 font-roboto-mono md:ml-20">
+            All Buddiez are equal, but some are more equal than others. That’s why we’ve established a trait rarity
+            system
+            to tell which of our students are likely destined for greatness.
+            <br><br>
+            There are 180+ total traits and these have been categorized into a tier based system (seen on the right).
+            Traits
+            are ranked from ‘common’ all the way through to ‘legendary’ and each rank has a corresponding % chance of
+            being
+            minted.
         </div>
-        <div class="self-center">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.7536 4.41304C19.8317 4.49048 19.8936 4.58261 19.9359 4.68412C19.9782 4.78562 20 4.8945 20 5.00447C20 5.11443 19.9782 5.22331 19.9359 5.32481C19.8936 5.42632 19.8317 5.51845 19.7536 5.59589L10.5907 14.7588C10.5133 14.8369 10.4211 14.8988 10.3196 14.9411C10.2181 14.9834 10.1093 15.0052 9.99929 15.0052C9.88933 15.0052 9.78045 14.9834 9.67894 14.9411C9.57743 14.8988 9.4853 14.8369 9.40787 14.7588L0.244975 5.59589C0.08812 5.43903 0 5.22629 0 5.00447C0 4.78264 0.08812 4.5699 0.244975 4.41304C0.40183 4.25619 0.614571 4.16807 0.836398 4.16807C1.05822 4.16807 1.27097 4.25619 1.42782 4.41304L9.99929 12.9928L18.5708 4.41304C18.6482 4.33497 18.7403 4.273 18.8418 4.23071C18.9433 4.18842 19.0522 4.16665 19.1622 4.16665C19.2721 4.16665 19.381 4.18842 19.4825 4.23071C19.584 4.273 19.6762 4.33497 19.7536 4.41304Z"
-                      fill="#B9B9B9"/>
-            </svg>
+
+        <div class="mt-10 flex flex-wrap md:ml-20 lg:pr-20">
+            <div class="flex-grow p-5">
+                <p class="text-4.5xl font-bold text-gray-500">
+                    <img class="h-10" src="/img/text/180.png" alt="180+">
+                </p>
+                <p class="font-bold pt-2">traits</p>
+            </div>
+
+            <div class="flex-grow p-5">
+                <p class="text-4.5xl font-bold text-gray-500">
+                    <img class="h-10" src="/img/text/12.png" alt="12">
+                </p>
+                <p class="font-bold pt-2">categories</p>
+            </div>
+
+            <div class="p-5">
+                <p class="text-4.5xl font-bold text-gray-500">
+                    <img class="h-10" src="/img/text/15.png" alt="15">
+                </p>
+                <p class="font-bold pt-2">animals</p>
+            </div>
+
+            <div class="p-5 md:w-full">
+                <p class="text-4.5xl font-bold text-gray-500">
+                    <img class="h-10" src="/img/text/10000.png" alt="10000">
+                </p>
+                <p class="font-bold pt-2">max total supply, over trillions combinations</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="p-5">
-    <img src="/img/characters/horse.png" alt="horse" class="m-auto">
+    <div class="mt-4 p-5 lg:hidden">
+        <div class="flex bg-black p-3 rounded-lg">
+            <div class="flex-grow">
+                <p class="text-white font-black">Common</p>
+                <p class="text-gray-400 font-roboto-mono">5,000 tokens</p>
+            </div>
+            <div class="self-center">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.7536 4.41304C19.8317 4.49048 19.8936 4.58261 19.9359 4.68412C19.9782 4.78562 20 4.8945 20 5.00447C20 5.11443 19.9782 5.22331 19.9359 5.32481C19.8936 5.42632 19.8317 5.51845 19.7536 5.59589L10.5907 14.7588C10.5133 14.8369 10.4211 14.8988 10.3196 14.9411C10.2181 14.9834 10.1093 15.0052 9.99929 15.0052C9.88933 15.0052 9.78045 14.9834 9.67894 14.9411C9.57743 14.8988 9.4853 14.8369 9.40787 14.7588L0.244975 5.59589C0.08812 5.43903 0 5.22629 0 5.00447C0 4.78264 0.08812 4.5699 0.244975 4.41304C0.40183 4.25619 0.614571 4.16807 0.836398 4.16807C1.05822 4.16807 1.27097 4.25619 1.42782 4.41304L9.99929 12.9928L18.5708 4.41304C18.6482 4.33497 18.7403 4.273 18.8418 4.23071C18.9433 4.18842 19.0522 4.16665 19.1622 4.16665C19.2721 4.16665 19.381 4.18842 19.4825 4.23071C19.584 4.273 19.6762 4.33497 19.7536 4.41304Z"
+                          fill="#B9B9B9"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 lg:w-[45%] relative">
+        <img src="/img/characters/horse.png" alt="horse" class="m-auto lg:w-64">
+
+        <div class="hidden lg:block w-48 space-y-6 bg-black-background text-white rounded-lg p-4 -mt-10 z-10 text-xl font-black">
+            <div class="flex">
+                <img class="-mt-5" src="/img/empty-star.svg" alt="empty star">
+                <div class="ml-4">
+                    <h4>Common</h4>
+                    <p class="font-roboto-mono text-gray-500 text-sm">5,000 tokens</p>
+                </div>
+            </div>
+            <div class="flex text-design-text-yellow">
+                <img class="-mt-5" src="/img/empty-star.svg" alt="empty star">
+                <div class="ml-4">
+                    <h4>Uncommon</h4>
+                    <p class="font-roboto-mono text-gray-500 text-sm">5,000 tokens</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img class="-mt-5" src="/img/empty-star.svg" alt="empty star">
+                <div class="ml-4">
+                    <h4 class="text-design-text-pink">Rare</h4>
+                    <p class="font-roboto-mono text-gray-500 text-sm">5,000 tokens</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img class="-mt-5" src="/img/empty-star.svg" alt="empty star">
+                <div class="ml-4">
+                    <h4 class="rainbow-text">Legendary</h4>
+                    <p class="font-roboto-mono text-gray-500 text-sm">500 tokens</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <!-- ROADMAP -->
@@ -441,44 +497,70 @@
 </div>
 
 <!-- What's then? -->
-<div class="mt-22 px-5 lg:flex lg:justify-center">
-    <h1 class="text-4.5xl tracking-wide font-bold lg:mr-10">Whats then?</h1>
-    <p class="font-roboto-mono mt-12 lg:mt-0 lg:max-w-xl xl:ml-10">
+<div class="mt-22 px-5 lg:flex">
+    <h1 class="text-4.5xl tracking-wide font-bold lg:mr-10 lg:w-2/5 lg:text-right">Whats then?</h1>
+    <p class="font-roboto-mono mt-12 lg:mt-0 lg:max-w-xl lg:w-3/5">
         It depends on you!
         <br><br>
         We provide community leads initiatives and much more, you help decide where do we go from here.
     </p>
 </div>
 
-<div class="px-5 mt-20 anon-back">
-    <h4 class="pt-15 text-2xl tracking-wide font-bold text-white">Get your crypto buddy</h4>
-    <p class="pt-10 pb-10 font-roboto-mono text-gray-400">
-        By buying a Crypto Buddy you are investing in future, help other people and get special privilegies such as
-        participation in private giveaways and passive income (25% of royalties).
-    </p>
-    <p>
-        <img class="m-auto" src="/img/anon-parrot.png" alt="anonymous parrot">
-    </p>
 
-    <div class="mt-10">
-        <p class="font-black text-white text-center">Price: 0.04 ETH</p>
-        <p class="text-gray-400 text-center mt-5">Quantity (max 20)</p>
-        <div class="flex text-white text-2xl mt-4 h-10 items-center border-b border-gray-400">
-            <div class="w-10 py-3 text-center cursor-pointer">+</div>
-            <div class="flex-grow text-center">2</div>
-            <div class="w-10 py-3 text-center cursor-pointer">-</div>
-        </div>
-        <p class="text-gray-400 text-center mt-7">Total price</p>
-        <div class="mt-2 h-10 flex justify-center items-center text-white text-2xl font-bold">
-            0.08 ETH
-            <div class="text-sm -mb-2 text-gray-400">&nbsp;+ Gas</div>
-        </div>
+<!-- Get your crypto buddy -->
+<div class="px-5 mt-20 anon-back md:flex">
+    <div class="md:hidden">
+        <h4 class="pt-15 text-xl tracking-wide font-bold text-white">Get your crypto buddy</h4>
+        <p class="pt-10 pb-10 text-sm font-roboto-mono text-gray-400">
+            By buying a Crypto Buddy you are investing in future, help other people and get special privilegies such as
+            participation in private giveaways and passive income (25% of royalties).
+        </p>
     </div>
 
-    <div class="pb-20 mt-5">
-        <button class="w-full bg-design-yellow text-black font-black border-black border rounded-full py-3">Mint
-            tokens
-        </button>
+    <div class="md:mr-10 md:mt-14 md:w-2/5">
+        <img class="m-auto md:m-0 md:w-72 md:float-right" src="/img/anon-parrot.png" alt="anonymous parrot">
+    </div>
+
+    <div class="md:w-3/5 md:mt-20">
+        <div class="hidden md:block">
+            <h4 class="text-xl tracking-wide font-bold text-white">Get your crypto buddy</h4>
+            <div class="font-roboto-mono text-gray-400 md:text-xs md:mt-4 md:max-w-lg">
+                By buying a Crypto Buddy you are investing in future, help other people and get special privilegies such
+                as
+                participation in private giveaways and passive income (25% of royalties).
+            </div>
+        </div>
+
+        <div class="md:w-96">
+            <div class="mt-10 md:mt-5">
+                <p class="font-black text-white text-center md:text-left md:text-sm">Price: 0.04 ETH</p>
+
+                <div class="md:flex">
+                    <div class="md:w-full">
+                        <p class="text-gray-400 text-center mt-5 md:text-left md:text-xs">Quantity (max 20)</p>
+                        <div class="flex text-white text-2xl mt-4 h-10 items-center border-b border-gray-400">
+                            <div class="w-10 py-3 text-center cursor-pointer">-</div>
+                            <div class="flex-grow text-center">2</div>
+                            <div class="w-10 py-3 text-center cursor-pointer">+</div>
+                        </div>
+                    </div>
+                    <div class="md:w-full md:ml-10">
+                        <p class="text-gray-400 text-center mt-7 md:mt-5 md:text-left md:text-xs">Total price</p>
+                        <div class="mt-2 h-10 flex justify-center items-center text-white text-2xl font-bold md:justify-start md:mt-4">
+                            0.08 ETH
+                            <div class="text-sm -mb-2 text-gray-400">&nbsp;+ Gas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-20 mt-5">
+                <button class="w-full bg-design-yellow text-black font-black border-black border rounded-full py-3">Mint
+                    tokens
+                </button>
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -555,7 +637,7 @@
     <img class="flex-none" src="/img/star.svg" alt="star">
     <div class="flex-none">Help others</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Mint Crypto Buddiez</div>
+    <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
     <div class="flex-none">Learn</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
@@ -563,7 +645,7 @@
     <img class="flex-none" src="/img/star.svg" alt="star">
     <div class="flex-none">Help others</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Mint Crypto Buddiez</div>
+    <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
     <div class="flex-none">Learn</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
@@ -571,7 +653,7 @@
     <img class="flex-none" src="/img/star.svg" alt="star">
     <div class="flex-none">Help others</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Mint Crypto Buddiez</div>
+    <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
     <img class="flex-none" src="/img/star.svg" alt="star">
 </div>
 
