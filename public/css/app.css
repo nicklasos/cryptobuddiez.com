@@ -408,6 +408,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
   --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -427,32 +430,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-top-10 {
   top: -2.5rem;
 }
-.right-0 {
-  right: 0px;
+.z-30 {
+  z-index: 30;
 }
-.right-10 {
-  right: 2.5rem;
-}
-.top-10 {
-  top: 2.5rem;
-}
-.top-15 {
-  top: 3.75rem;
-}
-.top-20 {
-  top: 5rem;
-}
-.right-5 {
-  right: 1.25rem;
-}
-.right-20 {
-  right: 5rem;
+.z-20 {
+  z-index: 20;
 }
 .z-10 {
   z-index: 10;
-}
-.float-right {
-  float: right;
 }
 .m-auto {
   margin: auto;
@@ -553,6 +538,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-15 {
   height: 3.75rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-3 {
   height: 0.75rem;
 }
@@ -600,9 +588,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-98 {
   width: 25rem;
-}
-.w-\[40\%\] {
-  width: 40%;
 }
 .flex-none {
   flex: none;
@@ -659,6 +644,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -679,15 +674,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .self-end {
   align-self: flex-end;
@@ -785,6 +780,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pl-2 {
   padding-left: 0.5rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pt-8 {
   padding-top: 2rem;
 }
@@ -808,9 +806,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-10 {
   padding-top: 2.5rem;
-}
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 .pb-20 {
   padding-bottom: 5rem;
@@ -842,6 +837,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-roboto-mono {
   font-family: Roboto Mono, ui-sans-serif, serif;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -849,10 +848,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4\.5xl {
   font-size: 2.75rem;
   line-height: 2.5rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -956,6 +951,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rainbow-text {
     background-image: linear-gradient(to left, #FFB88C, #FFE7A1, #95E2FF, #9795DE);   -webkit-background-clip: text;
     color: transparent;
+}
+
+.mobile-menu-open .mobile-menu {
+    display: flex;
+}
+
+.mobile-menu-open .social-links-top {
+    display: none;
+}
+
+.mobile-menu-open .burger-close {
+    display: block;
+}
+
+.mobile-menu-open .burger-open {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -1183,10 +1194,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
-  .lg\:w-\[60\%\] {
-    width: 60%;
-  }
-
   .lg\:max-w-lg {
     max-width: 32rem;
   }
@@ -1205,10 +1212,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
-  }
-
-  .lg\:items-center {
-    align-items: center;
   }
 
   .lg\:justify-center {
@@ -1273,3 +1276,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 11rem;
   }
 }
+

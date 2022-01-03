@@ -27,3 +27,19 @@
     background-image: linear-gradient(to left, #FFB88C, #FFE7A1, #95E2FF, #9795DE);   -webkit-background-clip: text;
     color: transparent;
 }
+
+.mobile-menu-open .mobile-menu {
+    display: flex;
+}
+
+.mobile-menu-open .social-links-top {
+    display: none;
+}
+
+.mobile-menu-open .burger-close {
+    display: block;
+}
+
+.mobile-menu-open .burger-open {
+    display: none;
+}

@@ -7,7 +7,10 @@
   \**************************/
 /***/ (() => {
 
-
+var btn = document.querySelector('.mobile-menu-button');
+btn.addEventListener('click', function () {
+  document.body.classList.toggle('mobile-menu-open');
+});
 
 /***/ }),
 
