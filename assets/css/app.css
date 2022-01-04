@@ -43,3 +43,27 @@
 .mobile-menu-open .burger-open {
     display: none;
 }
+
+.pink-blur {
+    position: absolute;
+    width: 250.52px;
+    height: 278.98px;
+    left: 91.82px;
+    top: 1467px;
+
+    background: #FFB8CA;
+    filter: blur(350px);
+    transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
+}
+
+.orange-blur {
+    position: absolute;
+    width: 250.52px;
+    height: 278.98px;
+    left: 1303.82px;
+    top: 253px;
+
+    background: #FFB88C;
+    filter: blur(350px);
+    transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
+}
