@@ -391,7 +391,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.border, .border-b, .border-l-2, .border-t, .lg\:border-r {
+.border, .border-b, .border-t, .border-l-2, .lg\:border-r {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -423,12 +423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .top-0 {
   top: 0px;
-}
-.left-32 {
-  left: 8rem;
-}
-.-top-10 {
-  top: -2.5rem;
 }
 .z-30 {
   z-index: 30;
@@ -664,6 +658,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -673,11 +672,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .self-end {
   align-self: flex-end;
@@ -706,15 +700,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-b {
   border-bottom-width: 1px;
 }
-.border-l-2 {
-  border-left-width: 2px;
-}
 .border-t {
   border-top-width: 1px;
+}
+.border-l-2 {
+  border-left-width: 2px;
 }
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -793,6 +791,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-2 {
   padding-top: 0.5rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .pl-9 {
   padding-left: 2.25rem;
 }
@@ -832,6 +836,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-roboto-mono {
   font-family: Roboto Mono, ui-sans-serif, serif;
 }
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -844,13 +852,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 2.75rem;
   line-height: 2.5rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -860,11 +868,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.font-semibold {
+  font-weight: 600;
+}
 .font-bold {
   font-weight: 700;
 }
-.font-black {
-  font-weight: 900;
+.font-medium {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
@@ -964,14 +978,19 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
 }
 
+.mobile-rarity-menu-open .mobile-rarity-menu {
+    display: block;
+}
+
 .pink-blur {
     position: absolute;
     width: 250.52px;
     height: 278.98px;
     left: 91.82px;
-    top: 1437px;
+    top: 1467px;
+
     background: #FFB8CA;
-    filter: blur(200px);
+    filter: blur(350px);
     transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
 }
 
@@ -979,11 +998,87 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
     width: 250.52px;
     height: 278.98px;
-    right: -38px;
-    top: 252px;
+    left: 1303.82px;
+    top: 253px;
+
     background: #FFB88C;
-    filter: blur(150px);
+    filter: blur(350px);
     transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
+}
+
+.rotate {
+    -webkit-animation: rotation 15s infinite linear;
+            animation: rotation 15s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+.running-line {
+    /* animation properties */
+    /*-moz-transform: translateX(100%);*/
+    /*-webkit-transform: translateX(100%);*/
+    transform: translateX(100%);
+
+    /*-moz-animation: run 15s linear infinite;*/
+    /*-webkit-animation: run 15s linear infinite;*/
+    -webkit-animation: run 15s linear infinite;
+            animation: run 15s linear infinite;
+}
+
+/* for Firefox */
+/*@-moz-keyframes run {*/
+/*    from { -moz-transform: translateX(100%); }*/
+/*    to { -moz-transform: translateX(-100%); }*/
+/*}*/
+
+/* for Chrome */
+@-webkit-keyframes run {
+    from { -webkit-transform: translateX(0%); }
+    to { -webkit-transform: translateX(-30%); }
+}
+
+/*@keyframes run {*/
+/*    from {*/
+/*        -moz-transform: translateX(0%);*/
+/*        -webkit-transform: translateX(0%);*/
+/*        transform: translateX(0%);*/
+/*    }*/
+/*    to {*/
+/*        -moz-transform: translateX(100%);*/
+/*        -webkit-transform: translateX(100%);*/
+/*        transform: translateX(100%);*/
+/*    }*/
+/*}*/
+
+
+.teammate:hover .balloon {
+    display: block;
+}
+
+.teammate:hover {
+    cursor: none;
+}
+
+.balloon {
+    position: absolute; /* Floating above */
+    transition: transform 0s; /* Sticking effect */
+    pointer-events: none; /* Allow clicking trough the div */
 }
 
 @media (min-width: 768px) {
@@ -1132,11 +1227,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 

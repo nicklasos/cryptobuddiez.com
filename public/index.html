@@ -16,200 +16,202 @@
 
     <link rel="stylesheet" href="/css/app.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto+Mono&display=swap"
+          rel="stylesheet">
 </head>
 
 <body class="bg-background font-Poppins">
 
-<div class="overflow-hidden">
-    <header class="sticky drop-shadow-sm w-full bg-white top-0 z-30">
-        <div class="flex items-center border-b border-black h-15">
-            <div class="flex-none">
-                <a href="#header">
-                    <img class="w-22 mt-6 ml-4 z-30" src="/img/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="hidden items-center text-gray-500 font-bold lg:flex lg:ml-6">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 0L5.17157 5.17157L0 8L5.17157 10.8284L8 16L10.8284 10.8284L16 8L10.8284 5.17157L8 0Z"
-                          fill="#E30052"/>
-                </svg>
-                <p class="pl-2">No wallet</p>
-            </div>
-
-            <!-- Menu -->
-            <div class="hidden lg:flex items-center font-black flex-grow justify-center space-x-9">
-                <a href="#about">About</a>
-                <a href="#roadmap">Roadmap</a>
-                <a href="#team">Team</a>
-                <a href="#faq">FAQ</a>
-            </div>
-
-            <!-- Social links -->
-            <div class="flex-grow lg:flex-none">
-                <div class="social-links-top">
-                    <div class="flex justify-center space-x-5">
-                        <a href="#">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21.5999 1.91992H2.39992C2.13496 1.91992 1.91992 2.13496 1.91992 2.39992V21.5999C1.91992 21.8649 2.13496 22.0799 2.39992 22.0799H21.5999C21.8649 22.0799 22.0799 21.8649 22.0799 21.5999V2.39992C22.0799 2.13496 21.8649 1.91992 21.5999 1.91992ZM19.1999 6.47992L18.3258 7.53448C18.2706 7.5892 18.2399 7.66312 18.2399 7.73992V15.7199C18.2399 15.7967 18.2706 15.8706 18.3258 15.9254L19.1999 17.062V17.2799H14.3999V17.062L15.754 15.9254C15.8092 15.8706 15.8399 15.7967 15.8399 15.7199V8.58184L11.927 17.2799H11.9265H11.1858L7.19992 8.81992V15.1118C7.19992 15.2174 7.2364 15.3196 7.30312 15.4022L8.63992 17.062V17.2799H4.79992V17.062L6.13576 15.4118C6.20296 15.3292 6.23992 15.226 6.23992 15.1199V7.86616C6.23992 7.798 6.21592 7.73224 6.17176 7.67992L5.27992 6.47992V6.23992H8.68648L12.346 14.0078L15.8409 6.23992H19.1999V6.47992Z"
-                                      fill="#1F1F1F"/>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22.3999 5.54963C21.6343 5.88963 20.8119 6.11843 19.9487 6.22163C20.8303 5.69363 21.5063 4.85763 21.8247 3.86083C21.0007 4.34963 20.0871 4.70483 19.1143 4.89683C18.3359 4.06723 17.2271 3.54883 15.9999 3.54883C13.6431 3.54883 11.7327 5.46003 11.7327 7.81603C11.7327 8.15043 11.7711 8.47683 11.8431 8.78803C8.29672 8.61043 5.15272 6.91123 3.04712 4.32883C2.68072 4.95923 2.47032 5.69203 2.47032 6.47523C2.47032 7.95523 3.22312 9.26163 4.36792 10.0264C3.66872 10.004 3.01032 9.81203 2.43512 9.49283C2.43512 9.51123 2.43512 9.52803 2.43512 9.54643C2.43512 11.6144 3.90552 13.3392 5.85832 13.7304C5.50072 13.828 5.12312 13.88 4.73352 13.88C4.45912 13.88 4.19112 13.8528 3.93112 13.804C4.47432 15.4992 6.05032 16.7336 7.91752 16.768C6.45752 17.9128 4.61752 18.5952 2.61752 18.5952C2.27352 18.5952 1.93352 18.5752 1.59912 18.5352C3.48792 19.7456 5.73032 20.452 8.14072 20.452C15.9903 20.452 20.2815 13.9496 20.2815 8.31043C20.2815 8.12563 20.2775 7.94163 20.2695 7.75843C21.1039 7.15603 21.8279 6.40483 22.3999 5.54963Z"
-                                      fill="#1F1F1F"/>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_250_239)">
-                                    <path d="M10.2985 10.0703C9.61572 10.0703 9.07666 10.6696 9.07666 11.4007C9.07666 12.1317 9.6277 12.731 10.2985 12.731C10.9813 12.731 11.5204 12.1317 11.5204 11.4007C11.5324 10.6696 10.9813 10.0703 10.2985 10.0703ZM14.6709 10.0703C13.9881 10.0703 13.449 10.6696 13.449 11.4007C13.449 12.1317 14 12.731 14.6709 12.731C15.3537 12.731 15.8927 12.1317 15.8927 11.4007C15.8927 10.6696 15.3537 10.0703 14.6709 10.0703Z"
-                                          fill="#1F1F1F"/>
-                                    <path d="M20.4929 0.0151367H4.44105C3.08742 0.0151367 1.98535 1.11776 1.98535 2.48405V18.6878C1.98535 20.0541 3.08742 21.1567 4.44105 21.1567H18.0252L17.3904 18.9395L18.9237 20.3657L20.3731 21.708L22.9486 23.9852V2.48405C22.9486 1.11776 21.8465 0.0151367 20.4929 0.0151367ZM15.869 15.6676C15.869 15.6676 15.4378 15.1522 15.0784 14.6968C16.6477 14.2533 17.2466 13.2706 17.2466 13.2706C16.7555 13.5942 16.2883 13.8219 15.869 13.9777C15.2701 14.2294 14.6951 14.3972 14.1321 14.493C12.9821 14.7088 11.9279 14.6488 11.0295 14.4811C10.3467 14.3492 9.75973 14.1575 9.26859 13.9657C8.99307 13.8578 8.6936 13.726 8.39412 13.5582C8.35818 13.5342 8.32225 13.5223 8.28631 13.4983C8.26235 13.4863 8.25037 13.4743 8.23839 13.4623C8.02277 13.3425 7.90298 13.2586 7.90298 13.2586C7.90298 13.2586 8.47797 14.2174 9.99931 14.6728C9.63994 15.1282 9.19671 15.6676 9.19671 15.6676C6.54935 15.5837 5.54312 13.8458 5.54312 13.8458C5.54312 9.98667 7.26809 6.85858 7.26809 6.85858C8.99307 5.5642 10.6342 5.60016 10.6342 5.60016L10.754 5.74398C8.59776 6.3672 7.60351 7.31401 7.60351 7.31401C7.60351 7.31401 7.86704 7.17019 8.31027 6.96645C9.59202 6.40315 10.6102 6.24735 11.0295 6.21139C11.1014 6.19941 11.1613 6.18742 11.2331 6.18742C11.9639 6.09154 12.7904 6.06757 13.6529 6.16345C14.7909 6.29529 16.0128 6.63087 17.2586 7.31401C17.2586 7.31401 16.3122 6.41514 14.2758 5.79192L14.4435 5.60016C14.4435 5.60016 16.0846 5.5642 17.8096 6.85858C17.8096 6.85858 19.5346 9.98667 19.5346 13.8458C19.5346 13.8458 18.5164 15.5837 15.869 15.6676Z"
-                                          fill="#1F1F1F"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_250_239">
-                                        <rect width="20.9333" height="24" fill="white" transform="translate(2)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Connect wallet -->
-            <div class="hidden lg:block">
-                <button class="bg-design-yellow text-black font-black rounded-full py-2 px-5 mx-7">Connect wallet
-                </button>
-            </div>
-
-            <!-- Burger -->
-            <div class="mobile-menu-button flex-none lg:hidden">
-                <button class="mr-3 mt-1">
-                    <svg class="hidden burger-close" width="40" height="40" viewBox="0 0 40 40" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M9.17851 9.17842C9.82938 8.52755 10.8847 8.52755 11.5355 9.17842L30.3917 28.0346C31.0426 28.6855 31.0426 29.7408 30.3917 30.3916C29.7408 31.0425 28.6856 31.0425 28.0347 30.3916L9.17851 11.5354C8.52764 10.8846 8.52764 9.8293 9.17851 9.17842Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M30.3919 9.17851C31.0428 9.82938 31.0428 10.8847 30.3919 11.5355L11.5357 30.3917C10.8848 31.0426 9.82956 31.0426 9.17869 30.3917C8.52781 29.7408 8.52781 28.6856 9.17869 28.0347L28.0349 9.17851C28.6857 8.52764 29.741 8.52764 30.3919 9.17851Z"
-                              fill="black"/>
-                    </svg>
-
-                    <svg class="burger-open" width="36" height="36" viewBox="0 0 36 36" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M31.5 9C31.5 9.82843 30.8284 10.5 30 10.5L6 10.5C5.17157 10.5 4.5 9.82843 4.5 9C4.5 8.17157 5.17157 7.5 6 7.5L30 7.5C30.8284 7.5 31.5 8.17157 31.5 9Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M31.5 17.3999C31.5 18.2283 30.8284 18.8999 30 18.8999H6C5.17157 18.8999 4.5 18.2283 4.5 17.3999C4.5 16.5715 5.17157 15.8999 6 15.8999L30 15.8999C30.8284 15.8999 31.5 16.5715 31.5 17.3999Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M31.5 25.7998C31.5 26.6282 30.8284 27.2998 30 27.2998H6C5.17157 27.2998 4.5 26.6282 4.5 25.7998C4.5 24.9714 5.17157 24.2998 6 24.2998H30C30.8284 24.2998 31.5 24.9714 31.5 25.7998Z"
-                              fill="black"/>
-                    </svg>
-                </button>
-            </div>
+<header class="sticky drop-shadow-sm w-full bg-white top-0 z-30 font-semibold text-sm ">
+    <div class="flex items-center border-b border-black h-15">
+        <div class="flex-none">
+            <a href="#header">
+                <img class="w-22 mt-6 ml-4 z-30" src="/img/logo.png" alt="logo">
+            </a>
         </div>
-    </header>
+        <div class="hidden items-center text-gray-500 lg:flex lg:ml-6">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0L5.17157 5.17157L0 8L5.17157 10.8284L8 16L10.8284 10.8284L16 8L10.8284 5.17157L8 0Z"
+                      fill="#E30052"/>
+            </svg>
+            <p class="pl-2">No wallet</p>
+        </div>
 
-    <!-- Mobile menu -->
-    <div class="hidden mobile-menu fixed bg-white h-full w-full z-20 flex flex-col items-center top-0 space-y-8 pb-10">
-        <nav class="flex flex-col m-auto text-center font-bold text-2xl space-y-5">
+        <!-- Menu -->
+        <div class="hidden lg:flex items-center flex-grow justify-center space-x-9">
             <a href="#about">About</a>
             <a href="#roadmap">Roadmap</a>
             <a href="#team">Team</a>
             <a href="#faq">FAQ</a>
-        </nav>
-        <div class="flex flex-col items-center space-y-5">
-            <div class="items-center text-gray-500 font-bold flex">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 0L5.17157 5.17157L0 8L5.17157 10.8284L8 16L10.8284 10.8284L16 8L10.8284 5.17157L8 0Z"
-                          fill="#E30052"/>
-                </svg>
-                <p class="pl-2">No wallet</p>
-            </div>
         </div>
-
-        <button class="bg-design-yellow text-black font-black rounded-full py-2 px-5 mx-7">Connect wallet</button>
 
         <!-- Social links -->
-        <div class="flex justify-center space-x-5">
-            <a href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.5999 1.91992H2.39992C2.13496 1.91992 1.91992 2.13496 1.91992 2.39992V21.5999C1.91992 21.8649 2.13496 22.0799 2.39992 22.0799H21.5999C21.8649 22.0799 22.0799 21.8649 22.0799 21.5999V2.39992C22.0799 2.13496 21.8649 1.91992 21.5999 1.91992ZM19.1999 6.47992L18.3258 7.53448C18.2706 7.5892 18.2399 7.66312 18.2399 7.73992V15.7199C18.2399 15.7967 18.2706 15.8706 18.3258 15.9254L19.1999 17.062V17.2799H14.3999V17.062L15.754 15.9254C15.8092 15.8706 15.8399 15.7967 15.8399 15.7199V8.58184L11.927 17.2799H11.9265H11.1858L7.19992 8.81992V15.1118C7.19992 15.2174 7.2364 15.3196 7.30312 15.4022L8.63992 17.062V17.2799H4.79992V17.062L6.13576 15.4118C6.20296 15.3292 6.23992 15.226 6.23992 15.1199V7.86616C6.23992 7.798 6.21592 7.73224 6.17176 7.67992L5.27992 6.47992V6.23992H8.68648L12.346 14.0078L15.8409 6.23992H19.1999V6.47992Z"
-                          fill="#1F1F1F"/>
-                </svg>
-            </a>
-            <a href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3999 5.54963C21.6343 5.88963 20.8119 6.11843 19.9487 6.22163C20.8303 5.69363 21.5063 4.85763 21.8247 3.86083C21.0007 4.34963 20.0871 4.70483 19.1143 4.89683C18.3359 4.06723 17.2271 3.54883 15.9999 3.54883C13.6431 3.54883 11.7327 5.46003 11.7327 7.81603C11.7327 8.15043 11.7711 8.47683 11.8431 8.78803C8.29672 8.61043 5.15272 6.91123 3.04712 4.32883C2.68072 4.95923 2.47032 5.69203 2.47032 6.47523C2.47032 7.95523 3.22312 9.26163 4.36792 10.0264C3.66872 10.004 3.01032 9.81203 2.43512 9.49283C2.43512 9.51123 2.43512 9.52803 2.43512 9.54643C2.43512 11.6144 3.90552 13.3392 5.85832 13.7304C5.50072 13.828 5.12312 13.88 4.73352 13.88C4.45912 13.88 4.19112 13.8528 3.93112 13.804C4.47432 15.4992 6.05032 16.7336 7.91752 16.768C6.45752 17.9128 4.61752 18.5952 2.61752 18.5952C2.27352 18.5952 1.93352 18.5752 1.59912 18.5352C3.48792 19.7456 5.73032 20.452 8.14072 20.452C15.9903 20.452 20.2815 13.9496 20.2815 8.31043C20.2815 8.12563 20.2775 7.94163 20.2695 7.75843C21.1039 7.15603 21.8279 6.40483 22.3999 5.54963Z"
-                          fill="#1F1F1F"/>
-                </svg>
-            </a>
-            <a href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_250_239)">
-                        <path d="M10.2985 10.0703C9.61572 10.0703 9.07666 10.6696 9.07666 11.4007C9.07666 12.1317 9.6277 12.731 10.2985 12.731C10.9813 12.731 11.5204 12.1317 11.5204 11.4007C11.5324 10.6696 10.9813 10.0703 10.2985 10.0703ZM14.6709 10.0703C13.9881 10.0703 13.449 10.6696 13.449 11.4007C13.449 12.1317 14 12.731 14.6709 12.731C15.3537 12.731 15.8927 12.1317 15.8927 11.4007C15.8927 10.6696 15.3537 10.0703 14.6709 10.0703Z"
-                              fill="#1F1F1F"/>
-                        <path d="M20.4929 0.0151367H4.44105C3.08742 0.0151367 1.98535 1.11776 1.98535 2.48405V18.6878C1.98535 20.0541 3.08742 21.1567 4.44105 21.1567H18.0252L17.3904 18.9395L18.9237 20.3657L20.3731 21.708L22.9486 23.9852V2.48405C22.9486 1.11776 21.8465 0.0151367 20.4929 0.0151367ZM15.869 15.6676C15.869 15.6676 15.4378 15.1522 15.0784 14.6968C16.6477 14.2533 17.2466 13.2706 17.2466 13.2706C16.7555 13.5942 16.2883 13.8219 15.869 13.9777C15.2701 14.2294 14.6951 14.3972 14.1321 14.493C12.9821 14.7088 11.9279 14.6488 11.0295 14.4811C10.3467 14.3492 9.75973 14.1575 9.26859 13.9657C8.99307 13.8578 8.6936 13.726 8.39412 13.5582C8.35818 13.5342 8.32225 13.5223 8.28631 13.4983C8.26235 13.4863 8.25037 13.4743 8.23839 13.4623C8.02277 13.3425 7.90298 13.2586 7.90298 13.2586C7.90298 13.2586 8.47797 14.2174 9.99931 14.6728C9.63994 15.1282 9.19671 15.6676 9.19671 15.6676C6.54935 15.5837 5.54312 13.8458 5.54312 13.8458C5.54312 9.98667 7.26809 6.85858 7.26809 6.85858C8.99307 5.5642 10.6342 5.60016 10.6342 5.60016L10.754 5.74398C8.59776 6.3672 7.60351 7.31401 7.60351 7.31401C7.60351 7.31401 7.86704 7.17019 8.31027 6.96645C9.59202 6.40315 10.6102 6.24735 11.0295 6.21139C11.1014 6.19941 11.1613 6.18742 11.2331 6.18742C11.9639 6.09154 12.7904 6.06757 13.6529 6.16345C14.7909 6.29529 16.0128 6.63087 17.2586 7.31401C17.2586 7.31401 16.3122 6.41514 14.2758 5.79192L14.4435 5.60016C14.4435 5.60016 16.0846 5.5642 17.8096 6.85858C17.8096 6.85858 19.5346 9.98667 19.5346 13.8458C19.5346 13.8458 18.5164 15.5837 15.869 15.6676Z"
-                              fill="#1F1F1F"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_250_239">
-                            <rect width="20.9333" height="24" fill="white" transform="translate(2)"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-            </a>
-        </div>
-    </div>
-
-    <div class="orange-blur">&nbsp;</div>
-
-    <div id="header"
-         class="mt-5 scroll-mt-20 md:flex md:items-center md:pl-10 md:pr-5 md:pt-12 relative overflow-hidden">
-        <div class="overflow-hidden md:w-2/4">
-            <img class="md:mt-0 md:float-right md:pr-10 lg:max-h-200" src="/img/buddiez-2.png" alt="buddiez">
-        </div>
-        <div class="md:ml-10 md:w-2/4 md:max-w-2xl lg:-mt-20">
-            <div class="mt-7 px-5 md:mt-0 text-center md:text-left">
-                <h1 class="text-4xl lg:text-6xl tracking-wide font-bold">Crypto Buddiez</h1>
-            </div>
-
-            <div class="mt-7 px-5">
-                <p class="font-roboto-mono">
-                    10,000 tokens with special features. Earn, learn, help others and gain access to holders’ privileges
-                </p>
-            </div>
-
-            <div class="md:max-w-sm lg:max-w-lg">
-                <div class="mt-7 px-5">
-                    <div class="mt-2">
-                        <div class="flex">
-                            <div class="flex-grow font-bold">Minted 24 / 10,000</div>
-                            <div class="justify-self-end font-bold">Price: 0.04 ETH</div>
-                        </div>
-                        <div class="h-3 rounded-lg mt-2" style="background-color:#E5E5E5;">&nbsp;</div>
-                        <div class="h-3 w-8 rounded-lg -mt-3 bg-design-yellow">&nbsp;</div>
-                    </div>
-                    <button class="mt-4 w-full bg-black text-white border-black border rounded-full py-3">Connect
-                        wallet
-                    </button>
+        <div class="flex-grow lg:flex-none">
+            <div class="social-links-top">
+                <div class="flex justify-center space-x-5">
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5999 1.91992H2.39992C2.13496 1.91992 1.91992 2.13496 1.91992 2.39992V21.5999C1.91992 21.8649 2.13496 22.0799 2.39992 22.0799H21.5999C21.8649 22.0799 22.0799 21.8649 22.0799 21.5999V2.39992C22.0799 2.13496 21.8649 1.91992 21.5999 1.91992ZM19.1999 6.47992L18.3258 7.53448C18.2706 7.5892 18.2399 7.66312 18.2399 7.73992V15.7199C18.2399 15.7967 18.2706 15.8706 18.3258 15.9254L19.1999 17.062V17.2799H14.3999V17.062L15.754 15.9254C15.8092 15.8706 15.8399 15.7967 15.8399 15.7199V8.58184L11.927 17.2799H11.9265H11.1858L7.19992 8.81992V15.1118C7.19992 15.2174 7.2364 15.3196 7.30312 15.4022L8.63992 17.062V17.2799H4.79992V17.062L6.13576 15.4118C6.20296 15.3292 6.23992 15.226 6.23992 15.1199V7.86616C6.23992 7.798 6.21592 7.73224 6.17176 7.67992L5.27992 6.47992V6.23992H8.68648L12.346 14.0078L15.8409 6.23992H19.1999V6.47992Z"
+                                  fill="#1F1F1F"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.3999 5.54963C21.6343 5.88963 20.8119 6.11843 19.9487 6.22163C20.8303 5.69363 21.5063 4.85763 21.8247 3.86083C21.0007 4.34963 20.0871 4.70483 19.1143 4.89683C18.3359 4.06723 17.2271 3.54883 15.9999 3.54883C13.6431 3.54883 11.7327 5.46003 11.7327 7.81603C11.7327 8.15043 11.7711 8.47683 11.8431 8.78803C8.29672 8.61043 5.15272 6.91123 3.04712 4.32883C2.68072 4.95923 2.47032 5.69203 2.47032 6.47523C2.47032 7.95523 3.22312 9.26163 4.36792 10.0264C3.66872 10.004 3.01032 9.81203 2.43512 9.49283C2.43512 9.51123 2.43512 9.52803 2.43512 9.54643C2.43512 11.6144 3.90552 13.3392 5.85832 13.7304C5.50072 13.828 5.12312 13.88 4.73352 13.88C4.45912 13.88 4.19112 13.8528 3.93112 13.804C4.47432 15.4992 6.05032 16.7336 7.91752 16.768C6.45752 17.9128 4.61752 18.5952 2.61752 18.5952C2.27352 18.5952 1.93352 18.5752 1.59912 18.5352C3.48792 19.7456 5.73032 20.452 8.14072 20.452C15.9903 20.452 20.2815 13.9496 20.2815 8.31043C20.2815 8.12563 20.2775 7.94163 20.2695 7.75843C21.1039 7.15603 21.8279 6.40483 22.3999 5.54963Z"
+                                  fill="#1F1F1F"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_250_239)">
+                                <path d="M10.2985 10.0703C9.61572 10.0703 9.07666 10.6696 9.07666 11.4007C9.07666 12.1317 9.6277 12.731 10.2985 12.731C10.9813 12.731 11.5204 12.1317 11.5204 11.4007C11.5324 10.6696 10.9813 10.0703 10.2985 10.0703ZM14.6709 10.0703C13.9881 10.0703 13.449 10.6696 13.449 11.4007C13.449 12.1317 14 12.731 14.6709 12.731C15.3537 12.731 15.8927 12.1317 15.8927 11.4007C15.8927 10.6696 15.3537 10.0703 14.6709 10.0703Z"
+                                      fill="#1F1F1F"/>
+                                <path d="M20.4929 0.0151367H4.44105C3.08742 0.0151367 1.98535 1.11776 1.98535 2.48405V18.6878C1.98535 20.0541 3.08742 21.1567 4.44105 21.1567H18.0252L17.3904 18.9395L18.9237 20.3657L20.3731 21.708L22.9486 23.9852V2.48405C22.9486 1.11776 21.8465 0.0151367 20.4929 0.0151367ZM15.869 15.6676C15.869 15.6676 15.4378 15.1522 15.0784 14.6968C16.6477 14.2533 17.2466 13.2706 17.2466 13.2706C16.7555 13.5942 16.2883 13.8219 15.869 13.9777C15.2701 14.2294 14.6951 14.3972 14.1321 14.493C12.9821 14.7088 11.9279 14.6488 11.0295 14.4811C10.3467 14.3492 9.75973 14.1575 9.26859 13.9657C8.99307 13.8578 8.6936 13.726 8.39412 13.5582C8.35818 13.5342 8.32225 13.5223 8.28631 13.4983C8.26235 13.4863 8.25037 13.4743 8.23839 13.4623C8.02277 13.3425 7.90298 13.2586 7.90298 13.2586C7.90298 13.2586 8.47797 14.2174 9.99931 14.6728C9.63994 15.1282 9.19671 15.6676 9.19671 15.6676C6.54935 15.5837 5.54312 13.8458 5.54312 13.8458C5.54312 9.98667 7.26809 6.85858 7.26809 6.85858C8.99307 5.5642 10.6342 5.60016 10.6342 5.60016L10.754 5.74398C8.59776 6.3672 7.60351 7.31401 7.60351 7.31401C7.60351 7.31401 7.86704 7.17019 8.31027 6.96645C9.59202 6.40315 10.6102 6.24735 11.0295 6.21139C11.1014 6.19941 11.1613 6.18742 11.2331 6.18742C11.9639 6.09154 12.7904 6.06757 13.6529 6.16345C14.7909 6.29529 16.0128 6.63087 17.2586 7.31401C17.2586 7.31401 16.3122 6.41514 14.2758 5.79192L14.4435 5.60016C14.4435 5.60016 16.0846 5.5642 17.8096 6.85858C17.8096 6.85858 19.5346 9.98667 19.5346 13.8458C19.5346 13.8458 18.5164 15.5837 15.869 15.6676Z"
+                                      fill="#1F1F1F"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_250_239">
+                                    <rect width="20.9333" height="24" fill="white" transform="translate(2)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Connect wallet -->
+        <div class="hidden lg:block">
+            <button class="bg-design-yellow text-black rounded-full py-2 px-5 mx-7">Connect wallet
+            </button>
+        </div>
+
+        <!-- Burger -->
+        <div class="mobile-menu-button flex-none lg:hidden">
+            <button class="mr-3 mt-1">
+                <svg class="hidden burger-close" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.17851 9.17842C9.82938 8.52755 10.8847 8.52755 11.5355 9.17842L30.3917 28.0346C31.0426 28.6855 31.0426 29.7408 30.3917 30.3916C29.7408 31.0425 28.6856 31.0425 28.0347 30.3916L9.17851 11.5354C8.52764 10.8846 8.52764 9.8293 9.17851 9.17842Z"
+                          fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M30.3919 9.17851C31.0428 9.82938 31.0428 10.8847 30.3919 11.5355L11.5357 30.3917C10.8848 31.0426 9.82956 31.0426 9.17869 30.3917C8.52781 29.7408 8.52781 28.6856 9.17869 28.0347L28.0349 9.17851C28.6857 8.52764 29.741 8.52764 30.3919 9.17851Z"
+                          fill="black"/>
+                </svg>
+
+                <svg class="burger-open" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M31.5 9C31.5 9.82843 30.8284 10.5 30 10.5L6 10.5C5.17157 10.5 4.5 9.82843 4.5 9C4.5 8.17157 5.17157 7.5 6 7.5L30 7.5C30.8284 7.5 31.5 8.17157 31.5 9Z"
+                          fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M31.5 17.3999C31.5 18.2283 30.8284 18.8999 30 18.8999H6C5.17157 18.8999 4.5 18.2283 4.5 17.3999C4.5 16.5715 5.17157 15.8999 6 15.8999L30 15.8999C30.8284 15.8999 31.5 16.5715 31.5 17.3999Z"
+                          fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M31.5 25.7998C31.5 26.6282 30.8284 27.2998 30 27.2998H6C5.17157 27.2998 4.5 26.6282 4.5 25.7998C4.5 24.9714 5.17157 24.2998 6 24.2998H30C30.8284 24.2998 31.5 24.9714 31.5 25.7998Z"
+                          fill="black"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="hidden mobile-menu fixed bg-white h-full w-full z-20 flex flex-col items-center top-0 space-y-8 pb-10">
+    <nav class="mobile-menu-btns flex flex-col m-auto text-center font-bold text-2xl space-y-5">
+        <a href="#about">About</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#team">Team</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <div class="flex flex-col items-center space-y-5">
+        <div class="items-center text-gray-500 flex">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0L5.17157 5.17157L0 8L5.17157 10.8284L8 16L10.8284 10.8284L16 8L10.8284 5.17157L8 0Z"
+                      fill="#E30052"/>
+            </svg>
+            <p class="pl-2">No wallet</p>
+        </div>
     </div>
 
-    <div class="mt-10 bg-white flex flex-nowrap overflow-hidden pt-8 pl-8 space-x-8">
+    <button class="bg-design-yellow text-black font-bold rounded-full py-2 px-5 mx-7">Connect wallet</button>
+
+    <!-- Social links -->
+    <div class="flex justify-center space-x-5">
+        <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.5999 1.91992H2.39992C2.13496 1.91992 1.91992 2.13496 1.91992 2.39992V21.5999C1.91992 21.8649 2.13496 22.0799 2.39992 22.0799H21.5999C21.8649 22.0799 22.0799 21.8649 22.0799 21.5999V2.39992C22.0799 2.13496 21.8649 1.91992 21.5999 1.91992ZM19.1999 6.47992L18.3258 7.53448C18.2706 7.5892 18.2399 7.66312 18.2399 7.73992V15.7199C18.2399 15.7967 18.2706 15.8706 18.3258 15.9254L19.1999 17.062V17.2799H14.3999V17.062L15.754 15.9254C15.8092 15.8706 15.8399 15.7967 15.8399 15.7199V8.58184L11.927 17.2799H11.9265H11.1858L7.19992 8.81992V15.1118C7.19992 15.2174 7.2364 15.3196 7.30312 15.4022L8.63992 17.062V17.2799H4.79992V17.062L6.13576 15.4118C6.20296 15.3292 6.23992 15.226 6.23992 15.1199V7.86616C6.23992 7.798 6.21592 7.73224 6.17176 7.67992L5.27992 6.47992V6.23992H8.68648L12.346 14.0078L15.8409 6.23992H19.1999V6.47992Z"
+                      fill="#1F1F1F"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.3999 5.54963C21.6343 5.88963 20.8119 6.11843 19.9487 6.22163C20.8303 5.69363 21.5063 4.85763 21.8247 3.86083C21.0007 4.34963 20.0871 4.70483 19.1143 4.89683C18.3359 4.06723 17.2271 3.54883 15.9999 3.54883C13.6431 3.54883 11.7327 5.46003 11.7327 7.81603C11.7327 8.15043 11.7711 8.47683 11.8431 8.78803C8.29672 8.61043 5.15272 6.91123 3.04712 4.32883C2.68072 4.95923 2.47032 5.69203 2.47032 6.47523C2.47032 7.95523 3.22312 9.26163 4.36792 10.0264C3.66872 10.004 3.01032 9.81203 2.43512 9.49283C2.43512 9.51123 2.43512 9.52803 2.43512 9.54643C2.43512 11.6144 3.90552 13.3392 5.85832 13.7304C5.50072 13.828 5.12312 13.88 4.73352 13.88C4.45912 13.88 4.19112 13.8528 3.93112 13.804C4.47432 15.4992 6.05032 16.7336 7.91752 16.768C6.45752 17.9128 4.61752 18.5952 2.61752 18.5952C2.27352 18.5952 1.93352 18.5752 1.59912 18.5352C3.48792 19.7456 5.73032 20.452 8.14072 20.452C15.9903 20.452 20.2815 13.9496 20.2815 8.31043C20.2815 8.12563 20.2775 7.94163 20.2695 7.75843C21.1039 7.15603 21.8279 6.40483 22.3999 5.54963Z"
+                      fill="#1F1F1F"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_250_239)">
+                    <path d="M10.2985 10.0703C9.61572 10.0703 9.07666 10.6696 9.07666 11.4007C9.07666 12.1317 9.6277 12.731 10.2985 12.731C10.9813 12.731 11.5204 12.1317 11.5204 11.4007C11.5324 10.6696 10.9813 10.0703 10.2985 10.0703ZM14.6709 10.0703C13.9881 10.0703 13.449 10.6696 13.449 11.4007C13.449 12.1317 14 12.731 14.6709 12.731C15.3537 12.731 15.8927 12.1317 15.8927 11.4007C15.8927 10.6696 15.3537 10.0703 14.6709 10.0703Z"
+                          fill="#1F1F1F"/>
+                    <path d="M20.4929 0.0151367H4.44105C3.08742 0.0151367 1.98535 1.11776 1.98535 2.48405V18.6878C1.98535 20.0541 3.08742 21.1567 4.44105 21.1567H18.0252L17.3904 18.9395L18.9237 20.3657L20.3731 21.708L22.9486 23.9852V2.48405C22.9486 1.11776 21.8465 0.0151367 20.4929 0.0151367ZM15.869 15.6676C15.869 15.6676 15.4378 15.1522 15.0784 14.6968C16.6477 14.2533 17.2466 13.2706 17.2466 13.2706C16.7555 13.5942 16.2883 13.8219 15.869 13.9777C15.2701 14.2294 14.6951 14.3972 14.1321 14.493C12.9821 14.7088 11.9279 14.6488 11.0295 14.4811C10.3467 14.3492 9.75973 14.1575 9.26859 13.9657C8.99307 13.8578 8.6936 13.726 8.39412 13.5582C8.35818 13.5342 8.32225 13.5223 8.28631 13.4983C8.26235 13.4863 8.25037 13.4743 8.23839 13.4623C8.02277 13.3425 7.90298 13.2586 7.90298 13.2586C7.90298 13.2586 8.47797 14.2174 9.99931 14.6728C9.63994 15.1282 9.19671 15.6676 9.19671 15.6676C6.54935 15.5837 5.54312 13.8458 5.54312 13.8458C5.54312 9.98667 7.26809 6.85858 7.26809 6.85858C8.99307 5.5642 10.6342 5.60016 10.6342 5.60016L10.754 5.74398C8.59776 6.3672 7.60351 7.31401 7.60351 7.31401C7.60351 7.31401 7.86704 7.17019 8.31027 6.96645C9.59202 6.40315 10.6102 6.24735 11.0295 6.21139C11.1014 6.19941 11.1613 6.18742 11.2331 6.18742C11.9639 6.09154 12.7904 6.06757 13.6529 6.16345C14.7909 6.29529 16.0128 6.63087 17.2586 7.31401C17.2586 7.31401 16.3122 6.41514 14.2758 5.79192L14.4435 5.60016C14.4435 5.60016 16.0846 5.5642 17.8096 6.85858C17.8096 6.85858 19.5346 9.98667 19.5346 13.8458C19.5346 13.8458 18.5164 15.5837 15.869 15.6676Z"
+                          fill="#1F1F1F"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_250_239">
+                        <rect width="20.9333" height="24" fill="white" transform="translate(2)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<!--    <div class="orange-blur">&nbsp;</div>-->
+
+<div id="header"
+     class="mt-5 scroll-mt-20 md:flex md:items-center md:pl-10 md:pr-5 md:pt-12 relative overflow-hidden">
+    <div class="overflow-hidden md:w-2/4">
+        <img class="md:mt-0 md:float-right md:pr-10 lg:max-h-200" src="/img/buddiez-2.png" alt="buddiez">
+    </div>
+    <div class="md:ml-10 md:w-2/4 md:max-w-2xl lg:-mt-20">
+        <div class="mt-7 px-5 md:mt-0 text-center md:text-left">
+            <h1 class="text-4xl lg:text-6xl tracking-wide font-bold">Crypto Buddiez</h1>
+        </div>
+
+        <div class="mt-7 px-5">
+            <p class="font-roboto-mono">
+                10,000 tokens with special features. Earn, learn, help others and gain access to holders’ privileges
+            </p>
+        </div>
+
+        <div class="md:max-w-sm lg:max-w-lg font-medium">
+            <div class="mt-7 px-5">
+                <div class="mt-2">
+                    <div class="flex">
+                        <div class="flex-grow">Minted 24 / 10,000</div>
+                        <div class="justify-self-end">Price: 0.04 ETH</div>
+                    </div>
+                    <div class="h-3 rounded-lg mt-2" style="background-color:#E5E5E5;">&nbsp;</div>
+                    <div class="h-3 w-8 rounded-lg -mt-3 bg-design-yellow">&nbsp;</div>
+                </div>
+                <button class="mt-4 w-full bg-black text-white border-black border rounded-full py-3">Connect
+                    wallet
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overflow-hidden">
+    <div class="mt-10 bg-white flex flex-nowrap pt-8 pl-8 space-x-8 running-line">
         <div class="w-44 h-44 rounded-lg bg-black flex-none flex items-center">
             <div class="text-center mx-auto">
                 <img src="/img/characters/1.png" alt="character">
@@ -241,6 +243,26 @@
             </div>
         </div>
         <div class="w-44 h-44 rounded-lg bg-background flex-none flex items-center">
+            <div class="text-center mx-auto">
+                <img src="/img/characters/1.png" alt="character">
+            </div>
+        </div>
+        <div class="w-44 h-44 rounded-lg bg-black flex-none flex items-center">
+            <div class="text-center mx-auto">
+                <img src="/img/characters/1.png" alt="character">
+            </div>
+        </div>
+        <div class="w-44 h-44 rounded-lg bg-black flex-none flex items-center">
+            <div class="text-center mx-auto">
+                <img src="/img/characters/1.png" alt="character">
+            </div>
+        </div>
+        <div class="w-44 h-44 rounded-lg bg-black flex-none flex items-center">
+            <div class="text-center mx-auto">
+                <img src="/img/characters/1.png" alt="character">
+            </div>
+        </div>
+        <div class="w-44 h-44 rounded-lg bg-black flex-none flex items-center">
             <div class="text-center mx-auto">
                 <img src="/img/characters/1.png" alt="character">
             </div>
@@ -292,14 +314,14 @@
 
     </div>
     <div class="hidden lg:block flex-grow">
-        <img class="m-auto mt-22" src="/img/circle.svg" alt="Mint crypto buddiez">
+        <img class="m-auto mt-22 rotate" src="/img/circle.svg" alt="Mint crypto buddiez">
     </div>
 </div>
 
 <!-- Features -->
 <div class="pink-blur">&nbsp;</div>
 <div class="mt-12 p-5 md:pt-20">
-    <h2 class="text-2xl font-bold border-b border-black pb-3">Features</h2>
+    <h2 class="text-3xl font-bold border-b border-black pb-3">Features</h2>
 
     <div class="space-y-16 mt-15 md:ml-20 lg:ml-32">
         <div class="md:max-w-sm">
@@ -324,7 +346,7 @@
         </div>
 
         <div class="md:max-w-sm">
-            <h3 class="text-4xl font-black">Community first.</h3>
+            <h3 class="text-4xl font-bold">Community first.</h3>
             <p class="font-roboto-mono mt-6">
                 Our key strategy desicions will be making together with holders.
                 <br><br>
@@ -341,7 +363,7 @@
 <!-- Trait rarity -->
 
 <div class="mt-12 p-5">
-    <h2 class="text-2xl font-bold border-b border-black pb-3">Trait rarity</h2>
+    <h2 class="text-3xl font-bold border-b border-black pb-3">Trait rarity</h2>
 </div>
 
 <div class="lg:flex">
@@ -390,10 +412,10 @@
         </div>
     </div>
 
-    <div class="mt-4 p-5 lg:hidden">
-        <div class="flex bg-black p-3 rounded-lg">
+    <div class="mt-4 p-5 lg:hidden mobile-rarity-menu-btn">
+        <div class="flex bg-black-background p-3 rounded-lg">
             <div class="flex-grow">
-                <p class="text-white font-black">Common</p>
+                <p class="text-white font-bold">Common</p>
                 <p class="text-gray-400 font-roboto-mono">5,000 tokens</p>
             </div>
             <div class="self-center">
@@ -403,12 +425,36 @@
                 </svg>
             </div>
         </div>
+
+        <div class="relative hidden mobile-rarity-menu">
+            <div class="w-full absolute z-10 bg-black-background rounded-lg mt-1 space-y-4 pt-4 pb-4">
+                <div class="flex text-design-text-yellow">
+                    <div class="ml-4">
+                        <h4>Uncommon</h4>
+                        <p class="font-roboto-mono text-gray-500 text-sm">5,000 tokens</p>
+                    </div>
+                </div>
+                <div class="flex border-t border-gray-500">
+                    <div class="ml-4 mt-4">
+                        <h4 class="text-design-text-pink">Rare</h4>
+                        <p class="font-roboto-mono text-gray-500 text-sm">5,000 tokens</p>
+                    </div>
+                </div>
+                <div class="flex border-t border-gray-500">
+                    <div class="ml-4 mt-4">
+                        <h4 class="rainbow-text">Legendary</h4>
+                        <p class="font-roboto-mono text-gray-500 text-sm">500 tokens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="p-5 lg:w-[45%] relative">
         <img src="/img/characters/horse.png" alt="horse" class="m-auto lg:w-64">
 
-        <div class="hidden lg:block w-48 space-y-6 bg-black-background text-white rounded-lg p-4 -mt-10 z-10 text-xl font-black">
+        <div class="hidden lg:block w-48 space-y-6 bg-black-background text-white rounded-lg p-4 -mt-10 z-10 text-xl font-bold">
             <div class="flex">
                 <img class="-mt-5" src="/img/empty-star.svg" alt="empty star">
                 <div class="ml-4">
@@ -457,12 +503,12 @@
                 <img src="/img/star.svg" alt="star" class="w-8">
             </div>
             <div class="flex ml-5">
-                <div class="text-4xl font-black">0%</div>
+                <div class="text-4xl font-bold">0%</div>
                 <img src="/img/done.svg" alt="done" class="ml-5 w-15 mb-2 self-end">
             </div>
         </div>
         <div class="py-5 pl-9 ml-4 border-l-2 border-black">
-            <h4 class="text-xl font-black">Welcome to the party!</h4>
+            <h4 class="text-xl font-semibold">Welcome to the party!</h4>
             <p class="font-roboto-mono mt-5">
                 Our Discord and website are launched. We will raffle 10 Crypto Buddiez between community members as its
                 number reach 7,000
@@ -476,12 +522,12 @@
                 <img src="/img/star.svg" alt="star" class="w-8">
             </div>
             <div class="flex ml-5">
-                <div class="text-4xl font-black">10%</div>
+                <div class="text-4xl font-bold">10%</div>
                 <img src="/img/in-progress.svg" alt="in progress" class="ml-5 w-20 mb-2 self-end">
             </div>
         </div>
         <div class="py-5 pl-9 ml-4 border-l-2 border-gray-300">
-            <h4 class="text-xl font-black">Community matters</h4>
+            <h4 class="text-xl font-semibold">Community matters</h4>
             <p class="font-roboto-mono mt-5">
                 Launch of private discord channel for holders, with privileges and vip giveaways. Members of this
                 channel will be allowed to participate in polls and take part in making project related strategy
@@ -496,11 +542,11 @@
                 <img src="/img/star-gray.svg" alt="star" class="w-8">
             </div>
             <div class="flex ml-5">
-                <div class="text-4xl font-black text-gray-300">25%</div>
+                <div class="text-4xl font-bold text-gray-300">25%</div>
             </div>
         </div>
         <div class="py-5 pl-9 ml-4 border-l-2 border-gray-300">
-            <h4 class="text-xl font-black">Community matters</h4>
+            <h4 class="text-xl font-semibold">Community matters</h4>
             <p class="font-roboto-mono mt-5">
                 Launch of private discord channel for holders, with privileges and vip giveaways. Members of this
                 channel will be allowed to participate in polls and take part in making project related strategy
@@ -515,11 +561,11 @@
                 <img src="/img/star-gray.svg" alt="star" class="w-8">
             </div>
             <div class="flex ml-5">
-                <div class="text-4xl font-black text-gray-300">50%</div>
+                <div class="text-4xl font-bold text-gray-300">50%</div>
             </div>
         </div>
         <div class="py-5 pl-9 ml-4 border-l-2 border-gray-300">
-            <h4 class="text-xl font-black">Exclusive merch drop</h4>
+            <h4 class="text-xl font-semibold">Exclusive merch drop</h4>
             <p class="font-roboto-mono mt-5">
                 Merch marketplace launch and merch packages giveaways to our holders
             </p>
@@ -532,11 +578,11 @@
                 <img src="/img/star-gray.svg" alt="star" class="w-8">
             </div>
             <div class="flex ml-5">
-                <div class="text-4xl font-black text-gray-300">75%</div>
+                <div class="text-4xl font-bold text-gray-300">75%</div>
             </div>
         </div>
         <div class="py-5 pl-9 ml-4 border-l-2 border-gray-300">
-            <h4 class="text-xl font-black">Support of other creators</h4>
+            <h4 class="text-xl font-semibold">Support of other creators</h4>
             <p class="font-roboto-mono mt-5">
                 Contest for NFT developers with 10 ETH prize fund. Start of partnership with other NFT projects,
                 artists, musicians and more
@@ -550,13 +596,13 @@
                 <img src="/img/star-gray.svg" alt="star" class="w-8">
             </div>
             <div class="flex ml-5">
-                <div class="text-4xl font-black text-gray-300">100%</div>
+                <div class="text-4xl font-bold text-gray-300">100%</div>
             </div>
         </div>
         <div class="py-5 pl-9 ml-4">
-            <h4 class="text-xl font-black">This is just beginning!</h4>
+            <h4 class="text-xl font-semibold">This is just beginning!</h4>
             <p class="font-roboto-mono mt-5">
-            <ul class="font-roboto-mono list-disc space-y-5">
+            <ul class="font-roboto-mono font-normal text-sm list-disc space-y-5 ml-5">
                 <li>
                     We start building Decentralized University
                 </li>
@@ -610,7 +656,7 @@
 
         <div class="md:w-96">
             <div class="mt-10 md:mt-5">
-                <p class="font-black text-white text-center md:text-left md:text-sm">Price: 0.04 ETH</p>
+                <p class="font-medium text-sm text-white text-center md:text-left md:text-md">Price: 0.04 ETH</p>
 
                 <div class="md:flex">
                     <div class="md:w-full">
@@ -623,7 +669,7 @@
                     </div>
                     <div class="md:w-full md:ml-10">
                         <p class="text-gray-400 text-center mt-7 md:mt-5 md:text-left md:text-xs">Total price</p>
-                        <div class="mt-2 h-10 flex justify-center items-center text-white text-2xl font-bold md:justify-start md:mt-4">
+                        <div class="mt-2 h-10 flex justify-center items-center text-white text-2xl font-semibold md:justify-start md:mt-4">
                             0.08 ETH
                             <div class="text-sm -mb-2 text-gray-400">&nbsp;+ Gas</div>
                         </div>
@@ -632,7 +678,7 @@
             </div>
 
             <div class="pb-20 mt-5">
-                <button class="w-full bg-design-yellow text-black font-black border-black border rounded-full py-3">Mint
+                <button class="w-full bg-design-yellow text-md font-semibold border-black border rounded-full py-3">Mint
                     tokens
                 </button>
             </div>
@@ -643,7 +689,7 @@
 
 <!-- Team -->
 <div id="team" class="p-5 mt-10 scroll-mt-16">
-    <h2 class="text-2xl font-bold border-b border-black pb-3">Meet the Incredible Team</h2>
+    <h2 class="text-3xl font-bold border-b border-black pb-3">Meet the Incredible Team</h2>
 
     <div class="lg:hidden">
         <div class="flex relative h-80">
@@ -662,10 +708,10 @@
             </button>
         </div>
         <div class="text-center -mt-4">
-            <h5 class="font-black text-xl">Mother of Buddiez</h5>
+            <h5 class="font-semibold text-xl">Mother of Buddiez</h5>
             <p class="text-gray-600 font-roboto-mono pt-3">Product Owner</p>
             <p class="font-roboto-mono pt-5">
-                During sleepless nights, she provide research, generate ideas, develop strategy of product and inspire
+                During sleepless nights, she provides research, generate ideas, develop strategy of product and inspire
                 the
                 team
             </p>
@@ -673,65 +719,67 @@
     </div>
 
     <div class="hidden lg:flex justify-center mt-12">
-        <div class="relative">
-            <div class="w-98 p-5 bg-white rounded-lg drop-shadow-2xl absolute left-32 -top-10">
+        <div class="relative teammate">
+            <div class="hidden balloon w-98 p-5 bg-white font-roboto-mono text-sm rounded-lg drop-shadow-2xl -absolute _left-32 _-top-10">
                 During sleepless nights, she provides research, generates ideas, develops strategy of product and
                 inspire the
                 team
             </div>
             <img class="h-52" src="/img/team/mother.png" alt="Mother of Buddiez">
-            <h5 class="font-black text-lg -mt-9 ml-11">Mother of Buddiez</h5>
+            <h5 class="font-semibold text-lg -mt-9 ml-11">Mother of Buddiez</h5>
             <p class="text-gray-600 font-roboto-mono pt-1 ml-11">Product Owner</p>
         </div>
         <div>
             <img class="h-52" src="/img/team/mother.png" alt="Mother of Buddiez">
-            <h5 class="font-black text-lg -mt-9 ml-11">BuddyScript</h5>
+            <h5 class="font-semibold text-lg -mt-9 ml-11">BuddyScript</h5>
             <p class="text-gray-600 font-roboto-mono pt-1 ml-11">CTO</p>
         </div>
         <div>
             <img class="h-52" src="/img/team/mother.png" alt="Mother of Buddiez">
-            <h5 class="font-black text-lg -mt-9 ml-11">Name Surname</h5>
+            <h5 class="font-semibold text-lg -mt-9 ml-11">Name Surname</h5>
             <p class="text-gray-600 font-roboto-mono pt-1 ml-11">Art Director</p>
         </div>
         <div>
             <img class="h-52" src="/img/team/mother.png" alt="Mother of Buddiez">
-            <h5 class="font-black text-lg -mt-9 ml-11">Name Surname</h5>
+            <h5 class="font-semibold text-lg -mt-9 ml-11">Name Surname</h5>
             <p class="text-gray-600 font-roboto-mono pt-1 ml-11">Artist</p>
         </div>
         <div>
             <img class="h-52" src="/img/team/mother.png" alt="Mother of Buddiez">
-            <h5 class="font-black text-lg -mt-9 ml-11">Name Surname</h5>
+            <h5 class="font-semibold text-lg -mt-9 ml-11">Name Surname</h5>
             <p class="text-gray-600 font-roboto-mono pt-1 ml-11">Community Manager</p>
         </div>
     </div>
 
 </div>
 
-<div class="flex flex-nowrap mt-20 space-x-5 text-lg font-black border-b border-t border-black py-2 overflow-hidden">
-    <div class="flex-none pl-3">Learn</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Earn</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Help others</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Learn</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Earn</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Help others</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Learn</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Earn</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none">Help others</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
-    <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
-    <img class="flex-none" src="/img/star.svg" alt="star">
+<div class="text-lg font-semibold border-b border-t mt-20 border-black overflow-hidden">
+    <div class="running-line flex flex-nowrap space-x-5 py-2">
+        <div class="flex-none pl-3">Learn</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Earn</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Help others</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Learn</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Earn</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Help others</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Learn</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Earn</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none">Help others</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+        <div class="flex-none rainbow-text">Mint Crypto Buddiez</div>
+        <img class="flex-none" src="/img/star.svg" alt="star">
+    </div>
 </div>
 
 <!-- FAQ -->
@@ -742,7 +790,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">What are the benefits of owing one?</h4>
+                <h4 class="text-xl font-bold">What are the benefits of owing one?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -751,7 +799,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">When does the sale start?</h4>
+                <h4 class="text-xl font-bold">When does the sale start?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -767,7 +815,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">What’s Crypto Buddie’s price?</h4>
+                <h4 class="text-xl font-bold">What’s Crypto Buddie’s price?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -776,7 +824,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">How many can I get?</h4>
+                <h4 class="text-xl font-bold">How many can I get?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -785,7 +833,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">What about the rarity?</h4>
+                <h4 class="text-xl font-bold">What about the rarity?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -794,7 +842,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">How to buy a Crypto Buddy?</h4>
+                <h4 class="text-xl font-bold">How to buy a Crypto Buddy?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -803,7 +851,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">When the reveal?</h4>
+                <h4 class="text-xl font-bold">When the reveal?</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -812,7 +860,7 @@
 
         <div class="flex border-b border-black pb-6">
             <div class="flex-grow">
-                <h4 class="text-xl font-black">NFT? Minting? I am new to these things, tell me more!</h4>
+                <h4 class="text-xl font-bold">NFT? Minting? I am new to these things, tell me more!</h4>
             </div>
             <div class="self-center justify-end flex w-10">
                 <img src="/img/arrow-black-down.svg" alt="arrow down">
@@ -865,14 +913,14 @@
 
 <div class="bg-black-background p-7 mt-15">
     <div class="lg:flex lg:flex-row-reverse">
-        <div class="text-white font-bold flex flex-col items-center space-y-4 lg:w-2/4 lg:pr-10 lg:flex-row lg:space-y-0 lg:space-x-7 lg:justify-center">
+        <div class="text-white font-semibold flex flex-col items-center space-y-4 lg:w-2/4 lg:pr-10 lg:flex-row lg:space-y-0 lg:space-x-7 lg:justify-center">
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
             <a href="#">Discord</a>
             <a href="#">Medium</a>
         </div>
         <div class="mt-8 mb-3 flex flex-col items-center lg:w-2/4 lg:pl-10 ">
-            <p class="text-white">
+            <p class="text-white font-semibold text-xl">
                 Verified Smart Contract:
             </p>
             <a href="#" class="text-gray-text text-xs mt-2">0x5df340b5d1618c543ac81837da1c2d2b17b3b5d8</a>

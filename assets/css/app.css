@@ -44,6 +44,10 @@
     display: none;
 }
 
+.mobile-rarity-menu-open .mobile-rarity-menu {
+    display: block;
+}
+
 .pink-blur {
     position: absolute;
     width: 250.52px;
@@ -66,4 +70,68 @@
     background: #FFB88C;
     filter: blur(350px);
     transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
+}
+
+.rotate {
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+.running-line {
+    /* animation properties */
+    /*-moz-transform: translateX(100%);*/
+    /*-webkit-transform: translateX(100%);*/
+    transform: translateX(100%);
+
+    /*-moz-animation: run 15s linear infinite;*/
+    /*-webkit-animation: run 15s linear infinite;*/
+    animation: run 15s linear infinite;
+}
+
+/* for Firefox */
+/*@-moz-keyframes run {*/
+/*    from { -moz-transform: translateX(100%); }*/
+/*    to { -moz-transform: translateX(-100%); }*/
+/*}*/
+
+/* for Chrome */
+@-webkit-keyframes run {
+    from { -webkit-transform: translateX(0%); }
+    to { -webkit-transform: translateX(-30%); }
+}
+
+/*@keyframes run {*/
+/*    from {*/
+/*        -moz-transform: translateX(0%);*/
+/*        -webkit-transform: translateX(0%);*/
+/*        transform: translateX(0%);*/
+/*    }*/
+/*    to {*/
+/*        -moz-transform: translateX(100%);*/
+/*        -webkit-transform: translateX(100%);*/
+/*        transform: translateX(100%);*/
+/*    }*/
+/*}*/
+
+
+.teammate:hover .balloon {
+    display: block;
+}
+
+.teammate:hover {
+    cursor: none;
+}
+
+.balloon {
+    position: absolute; /* Floating above */
+    transition: transform 0s; /* Sticking effect */
+    pointer-events: none; /* Allow clicking trough the div */
 }
