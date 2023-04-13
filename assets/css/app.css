@@ -1,3 +1,137 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bordered-text {
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    font-family: Poppins; color: white;
+}
+
+.anon-back {
+    background-color:#252525;
+    background-image: url('/img/anon-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-stroke {
+    text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+
+    color: white;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, #FFB88C, #FFE7A1, #95E2FF, #9795DE);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+.mobile-menu-open .mobile-menu {
+    display: flex;
+}
+
+.mobile-menu-open .social-links-top {
+    display: none;
+}
+
+.mobile-menu-open .burger-close {
+    display: block;
+}
+
+.mobile-menu-open .burger-open {
+    display: none;
+}
+
+.mobile-rarity-menu-open .mobile-rarity-menu {
+    display: block;
+}
+
+.pink-blur {
+    position: absolute;
+    width: 250.52px;
+    height: 278.98px;
+    left: 91.82px;
+    top: 1467px;
+
+    background: #FFB8CA;
+    filter: blur(350px);
+    transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
+}
+
+.orange-blur {
+    position: absolute;
+    width: 250.52px;
+    height: 278.98px;
+    left: 1303.82px;
+    top: 253px;
+
+    background: #FFB88C;
+    filter: blur(350px);
+    transform: matrix(-0.41, 0.95, 0.85, 0.46, 0, 0);
+}
+
+.rotate {
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+.running-line {
+    /* animation properties */
+    /*-moz-transform: translateX(100%);*/
+    /*-webkit-transform: translateX(100%);*/
+    transform: translateX(100%);
+
+    /*-moz-animation: run 15s linear infinite;*/
+    /*-webkit-animation: run 15s linear infinite;*/
+    animation: run 15s linear infinite;
+}
+
+/* for Firefox */
+/*@-moz-keyframes run {*/
+/*    from { -moz-transform: translateX(100%); }*/
+/*    to { -moz-transform: translateX(-100%); }*/
+/*}*/
+
+/* for Chrome */
+@-webkit-keyframes run {
+    from { -webkit-transform: translateX(0%); }
+    to { -webkit-transform: translateX(-30%); }
+}
+
+/*@keyframes run {*/
+/*    from {*/
+/*        -moz-transform: translateX(0%);*/
+/*        -webkit-transform: translateX(0%);*/
+/*        transform: translateX(0%);*/
+/*    }*/
+/*    to {*/
+/*        -moz-transform: translateX(100%);*/
+/*        -webkit-transform: translateX(100%);*/
+/*        transform: translateX(100%);*/
+/*    }*/
+/*}*/
+
+
+.teammate:hover .balloon {
+    display: block;
+}
+
+.teammate:hover {
+    cursor: none;
+}
+
+.balloon {
+    position: absolute; /* Floating above */
+    transition: transform 0s; /* Sticking effect */
+    pointer-events: none; /* Allow clicking trough the div */
+}
